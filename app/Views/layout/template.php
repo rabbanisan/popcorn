@@ -13,16 +13,19 @@
 </head>
 
 <body>
+    <!-- Add Navbar -->
     <?= $this->include('layout/navbar'); ?>
+    <!-- Content here -->
     <?= $this->renderSection('content'); ?>
-    </div>
+    <!-- Add Footer -->
+    <?= $this->include('layout/footer'); ?>
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Separate Popper and Bootstrap JS -->
     <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script> -->
-    <script src="/public/assets/js/bootstrap.bundle.js"></script>
-    <script src="/public/assets/js/jquery.min.js"></script>
-    <script src="/public/assets/js/popper.min.js"></script>
+    <script src="/assets/js/bootstrap.bundle.js"></script>
+    <script src="/assets/js/jquery.min.js"></script>
+    <script src="/assets/js/popper.min.js"></script>
 
 </body>
 

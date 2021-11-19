@@ -1,6 +1,7 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light sticky-lg-top">
     <div class="container">
-        <a class="navbar-brand align-item-center" href="#">
+        <a class="navbar-brand align-item-center" href="/">
             <img src="/assets/icon/popcorn (1).png" alt="tv" width=" 40" height="40">
             Popcorn
         </a>
@@ -8,15 +9,15 @@
             <span class="navbar-toggler-icon"></span>
         </button>
 
-        <di class="collapse navbar-collapse align-items-center " id="navbarSupportedContent">
+        <div class="collapse navbar-collapse align-items-center " id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="#">
+                    <a class="nav-link" aria-current="page" href="/#now-playing-section">
                         <img src="/assets/icon/play.svg" alt="" width="20" height="20">Now Playing
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">
+                    <a class="nav-link" href="/#upcoming-section">
                         <img src="/assets/icon/corner-right-up.svg" alt="" width="20" height="20">Upcoming
                     </a>
                 </li>
@@ -26,7 +27,6 @@
                 <img src="/assets/icon/imax.png" alt="" width="30" height="30" class="mx-3">
                 <img src="/assets/icon/logo_gabungan_3_05.png" alt="" width="75" height="25" class="mx-3">
             </div>
-    </div>
-
+        </div>
     </div>
 </nav>

@@ -1,0 +1,52 @@
+ERROR - 2021-11-15 06:48:39 --> Error connecting to the database: No connection could be made because the target machine actively refused it
+CRITICAL - 2021-11-15 06:48:39 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+#0 D:\Training\popcorn\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 D:\Training\popcorn\system\Database\BaseBuilder.php(1443): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 D:\Training\popcorn\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#3 D:\Training\popcorn\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#4 D:\Training\popcorn\app\Controllers\Pages.php(17): CodeIgniter\BaseModel->findAll()
+#5 D:\Training\popcorn\system\CodeIgniter.php(824): App\Controllers\Pages->home()
+#6 D:\Training\popcorn\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#7 D:\Training\popcorn\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\Training\popcorn\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 D:\Training\popcorn\system\Commands\Server\rewrite.php(43): require_once('D:\\Training\\pop...')
+#10 {main}
+ERROR - 2021-11-15 09:41:08 --> Error connecting to the database: No connection could be made because the target machine actively refused it
+CRITICAL - 2021-11-15 09:41:08 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+#0 D:\Training\popcorn\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 D:\Training\popcorn\system\Database\BaseBuilder.php(1443): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 D:\Training\popcorn\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#3 D:\Training\popcorn\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#4 D:\Training\popcorn\app\Controllers\Pages.php(17): CodeIgniter\BaseModel->findAll()
+#5 D:\Training\popcorn\system\CodeIgniter.php(824): App\Controllers\Pages->home()
+#6 D:\Training\popcorn\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#7 D:\Training\popcorn\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\Training\popcorn\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 D:\Training\popcorn\system\Commands\Server\rewrite.php(43): require_once('D:\\Training\\pop...')
+#10 {main}
+CRITICAL - 2021-11-15 13:44:34 --> Undefined array key "tittle"
+#0 D:\Training\popcorn\app\Views\pages\movie.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'D:\\Training\\pop...', 32)
+#1 D:\Training\popcorn\system\View\View.php(214): include('D:\\Training\\pop...')
+#2 D:\Training\popcorn\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 D:\Training\popcorn\system\Common.php(1097): CodeIgniter\View\View->render('pages/movie', Array, true)
+#4 D:\Training\popcorn\app\Controllers\Pages.php(32): view('pages/movie', Array)
+#5 D:\Training\popcorn\system\CodeIgniter.php(824): App\Controllers\Pages->movie('1')
+#6 D:\Training\popcorn\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#7 D:\Training\popcorn\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\Training\popcorn\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 D:\Training\popcorn\system\Commands\Server\rewrite.php(43): require_once('D:\\Training\\pop...')
+#10 {main}
+CRITICAL - 2021-11-15 13:59:43 --> Undefined array key "title"
+#0 D:\Training\popcorn\app\Views\pages\home.php(52): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'D:\\Training\\pop...', 52)
+#1 D:\Training\popcorn\system\View\View.php(214): include('D:\\Training\\pop...')
+#2 D:\Training\popcorn\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 D:\Training\popcorn\system\Common.php(1097): CodeIgniter\View\View->render('pages/home', Array, true)
+#4 D:\Training\popcorn\app\Controllers\Pages.php(23): view('pages/home', Array)
+#5 D:\Training\popcorn\system\CodeIgniter.php(824): App\Controllers\Pages->home()
+#6 D:\Training\popcorn\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#7 D:\Training\popcorn\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\Training\popcorn\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 D:\Training\popcorn\system\Commands\Server\rewrite.php(43): require_once('D:\\Training\\pop...')
+#10 {main}
