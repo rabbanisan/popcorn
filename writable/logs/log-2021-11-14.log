@@ -1,0 +1,129 @@
+ERROR - 2021-11-14 08:12:14 --> Error connecting to the database: No connection could be made because the target machine actively refused it
+CRITICAL - 2021-11-14 08:12:14 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+#0 D:\Training\popcorn\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 D:\Training\popcorn\system\Database\BaseBuilder.php(1443): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 D:\Training\popcorn\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#3 D:\Training\popcorn\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#4 D:\Training\popcorn\app\Controllers\Pages.php(17): CodeIgniter\BaseModel->findAll()
+#5 D:\Training\popcorn\system\CodeIgniter.php(824): App\Controllers\Pages->home()
+#6 D:\Training\popcorn\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#7 D:\Training\popcorn\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\Training\popcorn\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 D:\Training\popcorn\system\Commands\Server\rewrite.php(43): require_once('D:\\Training\\pop...')
+#10 {main}
+CRITICAL - 2021-11-14 16:02:31 --> Undefined variable $nowPlaying
+#0 D:\Training\popcorn\app\Views\pages\movie.php(5): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'D:\\Training\\pop...', 5)
+#1 D:\Training\popcorn\system\View\View.php(214): include('D:\\Training\\pop...')
+#2 D:\Training\popcorn\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 D:\Training\popcorn\system\Common.php(1097): CodeIgniter\View\View->render('pages/movie', Array, true)
+#4 D:\Training\popcorn\app\Controllers\Pages.php(32): view('pages/movie', Array)
+#5 D:\Training\popcorn\system\CodeIgniter.php(824): App\Controllers\Pages->movie()
+#6 D:\Training\popcorn\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#7 D:\Training\popcorn\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\Training\popcorn\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 D:\Training\popcorn\system\Commands\Server\rewrite.php(43): require_once('D:\\Training\\pop...')
+#10 {main}
+CRITICAL - 2021-11-14 16:03:19 --> Undefined variable $m
+#0 D:\Training\popcorn\app\Views\pages\movie.php(9): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'D:\\Training\\pop...', 9)
+#1 D:\Training\popcorn\system\View\View.php(214): include('D:\\Training\\pop...')
+#2 D:\Training\popcorn\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 D:\Training\popcorn\system\Common.php(1097): CodeIgniter\View\View->render('pages/movie', Array, true)
+#4 D:\Training\popcorn\app\Controllers\Pages.php(32): view('pages/movie', Array)
+#5 D:\Training\popcorn\system\CodeIgniter.php(824): App\Controllers\Pages->movie()
+#6 D:\Training\popcorn\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#7 D:\Training\popcorn\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\Training\popcorn\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 D:\Training\popcorn\system\Commands\Server\rewrite.php(43): require_once('D:\\Training\\pop...')
+#10 {main}
+CRITICAL - 2021-11-14 16:26:50 --> Undefined array key "id"
+#0 D:\Training\popcorn\app\Views\pages\home.php(49): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'D:\\Training\\pop...', 49)
+#1 D:\Training\popcorn\system\View\View.php(214): include('D:\\Training\\pop...')
+#2 D:\Training\popcorn\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 D:\Training\popcorn\system\Common.php(1097): CodeIgniter\View\View->render('pages/home', Array, true)
+#4 D:\Training\popcorn\app\Controllers\Pages.php(23): view('pages/home', Array)
+#5 D:\Training\popcorn\system\CodeIgniter.php(824): App\Controllers\Pages->home()
+#6 D:\Training\popcorn\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#7 D:\Training\popcorn\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\Training\popcorn\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 D:\Training\popcorn\system\Commands\Server\rewrite.php(43): require_once('D:\\Training\\pop...')
+#10 {main}
+CRITICAL - 2021-11-14 16:34:59 --> Cannot access offset of type string on string
+#0 D:\Training\popcorn\system\View\View.php(214): include()
+#1 D:\Training\popcorn\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 D:\Training\popcorn\system\Common.php(1097): CodeIgniter\View\View->render('pages/movie', Array, true)
+#3 D:\Training\popcorn\app\Controllers\Pages.php(32): view('pages/movie', Array)
+#4 D:\Training\popcorn\system\CodeIgniter.php(824): App\Controllers\Pages->movie('1')
+#5 D:\Training\popcorn\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#6 D:\Training\popcorn\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\Training\popcorn\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 D:\Training\popcorn\system\Commands\Server\rewrite.php(43): require_once('D:\\Training\\pop...')
+#9 {main}
+CRITICAL - 2021-11-14 16:37:05 --> Cannot access offset of type string on string
+#0 D:\Training\popcorn\system\View\View.php(214): include()
+#1 D:\Training\popcorn\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 D:\Training\popcorn\system\Common.php(1097): CodeIgniter\View\View->render('pages/movie', Array, true)
+#3 D:\Training\popcorn\app\Controllers\Pages.php(32): view('pages/movie', Array)
+#4 D:\Training\popcorn\system\CodeIgniter.php(824): App\Controllers\Pages->movie('1')
+#5 D:\Training\popcorn\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#6 D:\Training\popcorn\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\Training\popcorn\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 D:\Training\popcorn\system\Commands\Server\rewrite.php(43): require_once('D:\\Training\\pop...')
+#9 {main}
+CRITICAL - 2021-11-14 16:37:19 --> Cannot access offset of type string on string
+#0 D:\Training\popcorn\system\View\View.php(214): include()
+#1 D:\Training\popcorn\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 D:\Training\popcorn\system\Common.php(1097): CodeIgniter\View\View->render('pages/movie', Array, true)
+#3 D:\Training\popcorn\app\Controllers\Pages.php(32): view('pages/movie', Array)
+#4 D:\Training\popcorn\system\CodeIgniter.php(824): App\Controllers\Pages->movie('1')
+#5 D:\Training\popcorn\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#6 D:\Training\popcorn\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\Training\popcorn\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 D:\Training\popcorn\system\Commands\Server\rewrite.php(43): require_once('D:\\Training\\pop...')
+#9 {main}
+CRITICAL - 2021-11-14 16:42:14 --> Cannot access offset of type string on string
+#0 D:\Training\popcorn\system\View\View.php(214): include()
+#1 D:\Training\popcorn\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 D:\Training\popcorn\system\Common.php(1097): CodeIgniter\View\View->render('pages/movie', Array, true)
+#3 D:\Training\popcorn\app\Controllers\Pages.php(32): view('pages/movie', Array)
+#4 D:\Training\popcorn\system\CodeIgniter.php(824): App\Controllers\Pages->movie('1')
+#5 D:\Training\popcorn\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#6 D:\Training\popcorn\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\Training\popcorn\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 D:\Training\popcorn\system\Commands\Server\rewrite.php(43): require_once('D:\\Training\\pop...')
+#9 {main}
+ERROR - 2021-11-14 18:43:30 --> Error connecting to the database: No connection could be made because the target machine actively refused it
+CRITICAL - 2021-11-14 18:43:30 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+#0 D:\Training\popcorn\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 D:\Training\popcorn\system\Database\BaseBuilder.php(1443): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 D:\Training\popcorn\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#3 D:\Training\popcorn\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#4 D:\Training\popcorn\app\Controllers\Pages.php(17): CodeIgniter\BaseModel->findAll()
+#5 D:\Training\popcorn\system\CodeIgniter.php(824): App\Controllers\Pages->home()
+#6 D:\Training\popcorn\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#7 D:\Training\popcorn\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\Training\popcorn\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 D:\Training\popcorn\system\Commands\Server\rewrite.php(43): require_once('D:\\Training\\pop...')
+#10 {main}
+CRITICAL - 2021-11-14 23:39:11 --> Too few arguments to function App\Controllers\Pages::movie(), 0 passed in D:\Training\popcorn\system\CodeIgniter.php on line 824 and exactly 1 expected
+#0 D:\Training\popcorn\system\CodeIgniter.php(824): App\Controllers\Pages->movie()
+#1 D:\Training\popcorn\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#2 D:\Training\popcorn\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\Training\popcorn\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 D:\Training\popcorn\system\Commands\Server\rewrite.php(43): require_once('D:\\Training\\pop...')
+#5 {main}
+CRITICAL - 2021-11-14 23:40:36 --> Too few arguments to function App\Controllers\Pages::movie(), 0 passed in D:\Training\popcorn\system\CodeIgniter.php on line 824 and exactly 1 expected
+#0 D:\Training\popcorn\system\CodeIgniter.php(824): App\Controllers\Pages->movie()
+#1 D:\Training\popcorn\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#2 D:\Training\popcorn\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\Training\popcorn\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 D:\Training\popcorn\system\Commands\Server\rewrite.php(43): require_once('D:\\Training\\pop...')
+#5 {main}
+CRITICAL - 2021-11-14 23:40:42 --> Too few arguments to function App\Controllers\Pages::movie(), 0 passed in D:\Training\popcorn\system\CodeIgniter.php on line 824 and exactly 1 expected
+#0 D:\Training\popcorn\system\CodeIgniter.php(824): App\Controllers\Pages->movie()
+#1 D:\Training\popcorn\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#2 D:\Training\popcorn\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\Training\popcorn\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 D:\Training\popcorn\system\Commands\Server\rewrite.php(43): require_once('D:\\Training\\pop...')
+#5 {main}

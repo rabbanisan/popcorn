@@ -1,0 +1,15 @@
+CRITICAL - 2021-11-09 11:31:36 --> Invalid file: layout.footer
+#0 D:\Training\popcorn\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('layout.footer')
+#1 D:\Training\popcorn\system\View\View.php(432): CodeIgniter\View\View->render('layout.footer', NULL, true)
+#2 D:\Training\popcorn\app\Views\layout\template.php(21): CodeIgniter\View\View->include('layout.footer')
+#3 D:\Training\popcorn\system\View\View.php(214): include('D:\\Training\\pop...')
+#4 D:\Training\popcorn\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#5 D:\Training\popcorn\system\View\View.php(230): CodeIgniter\View\View->render('layout/template', Array, true)
+#6 D:\Training\popcorn\system\Common.php(1097): CodeIgniter\View\View->render('pages/home', Array, true)
+#7 D:\Training\popcorn\app\Controllers\Pages.php(9): view('pages/home')
+#8 D:\Training\popcorn\system\CodeIgniter.php(824): App\Controllers\Pages->index()
+#9 D:\Training\popcorn\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#10 D:\Training\popcorn\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\Training\popcorn\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 D:\Training\popcorn\system\Commands\Server\rewrite.php(43): require_once('D:\\Training\\pop...')
+#13 {main}
