@@ -1,7 +1,7 @@
 <!-- Use Tempalate for header and footer -->
-<?= $this->....(....); ?>
+<?= $this->extend('layout/template'); ?>
 <!-- Content here -->
-<?= $this->....(....); ?>
+<?= $this->section('content'); ?>
 <section class="container-fluid movie-trailer">
     <?php foreach ($movie as $m) : ?>
         <div class="row trailer p-4">
@@ -37,4 +37,4 @@
     </div>
 </div>
 <!-- End section content -->
-<?= $this->....(....); ?>
+<?= $this->endSection(); ?>;
