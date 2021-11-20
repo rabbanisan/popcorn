@@ -2,32 +2,32 @@
 
 namespace App\Controllers;
 
-use App\Models\....;
+use App\Models\MovieModel;
 
 class Pages extends BaseController
 {
     protected $movieModel;
-    public function __....()
+    public function __construct()
     {
-        $this->movieModel = new ....();
+        $this->movieModel = new MovieModel();
     }
 
-    public function ....()
+    public function home()
     {
-        $nowPlaying = $this->movieModel->where(.... , ....)->findAll();
-        $upComing = $this->movieModel->where(... , ....)->findAll();;
+        $nowPlaying = $this->movieModel->where('status', 'now_playing')->findAll();
+        $upComing = $this->movieModel->where('status', 'up_coming')->findAll();;
         $data = [
-            .... => $nowPlaying,
-            .... => $upComing
+           'nowPlaying' => $nowPlaying,
+            'upComing' => $upComing
         ];
-        echo view('pages/home', ....);
+        echo view('pages/home', $data);
     }
 
-    public function ....($....)
+    public function movie($id_movie)
     {
-        $movie = $this->movieModel->where(.... , $....)->findAll();
+        $movie = $this->movieModel->where('id_movie', $id_movie)->findAll();
         $data = [
-            .... => $movie
+            'movie' => $movie
         ];
         echo view('pages/movie', $data);
     }
