@@ -1,7 +1,7 @@
 <!-- Use Tempalate for header and footer -->
-<?= $this->....(....); ?>
+<?= $this->extend('layout/template'); ?>
 <!-- Content here -->
-<?= $this->....(....); ?>
+<?= $this->section('content'); ?>
 <!-- Hero -->
 <section class="container-fluid d-flex justify-content-center hero-container pt-5">
     <!-- Carousel -->
@@ -82,4 +82,4 @@
     </div>
 </section>
 <!-- End section content -->
-<?= $this->....(....); ?>
+<?= $this->endSection(); ?>
