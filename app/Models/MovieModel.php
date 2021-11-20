@@ -6,6 +6,6 @@ use CodeIgniter\Model;
 
 class MovieModel extends Model
 {
-    protected $.... = ....;
-    protected $.... = ....;
+    protected $table      = 'movies';
+    protected $primarykey = 'id_movie'; 
 }
